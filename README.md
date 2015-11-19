@@ -1,1 +1,1 @@
-# RTCGA.mirna
+# RTCGA.miRNASeq
