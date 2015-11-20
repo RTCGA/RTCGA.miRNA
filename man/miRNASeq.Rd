@@ -135,6 +135,8 @@ the date: \code{2015-08-21}. The process is described here:
 Use cases, examples and information about datasets in \pkg{RTCGA.data}
 family can be found here: \code{browseVignettes("RTCGA")}. miRNASeq data format
 is explained here \url{https://wiki.nci.nih.gov/display/TCGA/miRNASeq#miRNASeq-DataOverview}.
+There is one extra column "machine" in each dataset which describes a machine that 
+produced dataset. It can be: Illumina Genome Analyzer, Illumina HiSeq 2000 or both.
 }
 \details{
 \code{browseVignettes("RTCGA")}
