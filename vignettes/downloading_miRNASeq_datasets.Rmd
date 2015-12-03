@@ -1,6 +1,6 @@
 ---
 title: "Using `RTCGA` package to download  miRNASeq data that are included in `RTCGA.miRNASeq` package"
-subtitle: "Date of datasets release: 2015-08-21"
+subtitle: "Date of datasets release: 2015-11-01"
 author: "Witold Chodor"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -26,13 +26,14 @@ source("http://bioconductor.org/biocLite.R")
 biocLite("RTCGA")
 ```
 
-or from github
+or use below code to download the development version which is like to be more bug-free than the release version on Bioconductor:
+
 ```{r, eval=FALSE}
 if (!require(devtools)) {
     install.packages("devtools")
     require(devtools)
 }
-biocLite("MarcinKosinski/RTCGA")
+install_github("RTCGA/RTCGA")
 ```
 
 Furthermore, `RTCGA` package transforms TCGA data into form which is convenient to use in R statistical package. Those data transformations can be a part of statistical analysis pipeline which can be more reproducible with `RTCGA`.
@@ -50,7 +51,7 @@ library(RTCGA)
 checkTCGA('Dates')
 ```
 
-Version 1.0 of `RTCGA.miRNASeq` package contains miRNASeq datasets which were released `2015-08-21`. They were downloaded in the following way (which is mainly copied from [http://marcinkosinski.github.io/RTCGA/](http://marcinkosinski.github.io/RTCGA/):
+Version 1.0 of `RTCGA.miRNASeq` package contains miRNASeq datasets which were released `2015-11-01`. They were downloaded in the following way (which is mainly copied from [http://marcinkosinski.github.io/RTCGA/](http://marcinkosinski.github.io/RTCGA/):
 
 ## Available cohorts
 
@@ -70,7 +71,7 @@ two different machines: Illumina Genome Analyzer and Illumina HiSeq 2000.
 
 ```{r, eval=FALSE}
 #dir.create( "data2" )
-releaseDate <- "2015-08-21"
+releaseDate <- "2015-11-01"
 
 # data produced with Illumina Genome Analyzer machine
 sapply( cohorts, function(element){
@@ -167,7 +168,6 @@ data2_files[-illuminaga] %>%
                          ".miRNASeq_illuminahiseq.path"),
                  envir = .GlobalEnv)
       })
-
 ```
 
 ### Reading miRNASeq data using `readTCGA`
@@ -196,7 +196,6 @@ path_vector %>%
 
 # Now we will add special column `machine` to miRNASeq data depending on
 # kind of machine which produced data
-
 sapply(cohorts, function(element){
    w <- grep(paste0("^",element, "\\."), x = path_vector, value = TRUE)
    if (length(w) == 0) {

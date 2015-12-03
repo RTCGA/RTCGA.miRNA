@@ -5,7 +5,7 @@
 #' Package provides miRNASeq datasets from The Cancer Genome Atlas Project for
 #' all cohorts types from \url{http://gdac.broadinstitute.org/}.
 #' Data were downloaded using \link{RTCGA-package} and contain snapshots for
-#' the date: \code{2015-08-21}. The process is described here:
+#' the date: \code{2015-11-01}. The process is described here:
 #' \url{http://mi2-warsaw.github.io/RTCGA.data/}.
 #' Use cases, examples and information about datasets in \pkg{RTCGA.data}
 #' family can be found here: \code{browseVignettes("RTCGA")}. miRNASeq data format
