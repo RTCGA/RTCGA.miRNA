@@ -1,15 +1,12 @@
-# RTCGA.mRNA
+# RTCGA.miRNASeq
 
 A part of [RTCGA](https://github.com/RTCGA) family.
 
 To install development version from GitHub use
 
 ````{R}
-if (!require(devtools)) {
-    install.packages("devtools")
-    require(devtools)
-}
-install_github("RTCGA/RTCGA.mRNA", build.vignettes = TRUE)
+library(RTCGA)
+installTCGA("RTCGA.miRNASeq")
 ````
 
 Make sure you have [Rtools](https://cran.r-project.org/bin/windows/Rtools/) installed on your computer, if you are trying `devtools` on Windows.
@@ -19,6 +16,6 @@ To install Bioconductor development version use (the same as GitHub development 
 ````{R}
 BiocInstaller::useDevel() # swiches to devel branchof Bioconductor
 source("https://bioconductor.org/biocLite.R") # downloads bioClite function
-biocLite("RTCGA.mRNA") # installs a package
+biocLite("RTCGA.miRNASeq") # installs a package
 ````
 
