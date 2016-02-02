@@ -1,5 +1,4 @@
 [![Build Status](http://bioconductor.org/shields/build/devel/data-experiment/RTCGA.miRNASeq.svg)](http://bioconductor.org/checkResults/devel/data-experiment-LATEST/RTCGA.miRNASeq/)
-
 # [RTCGA.miRNASeq](http://bioconductor.org/packages/RTCGA.miRNASeq/)
 
 A part of [RTCGA](https://github.com/RTCGA) family.
