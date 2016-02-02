@@ -13,7 +13,7 @@ Make sure you have [Rtools](https://cran.r-project.org/bin/windows/Rtools/) inst
 
 To install Bioconductor development version use (the same as GitHub development version)
 
-[![Build Status](http://bioconductor.org/shields/build/devel/data-experiment/RTCGA.miRNASeq.svg](http://bioconductor.org/checkResults/devel/data-experiment-LATEST/RTCGA.miRNASeq/)
+[![Build Status](http://bioconductor.org/shields/build/devel/data-experiment/RTCGA.miRNASeq.svg)](http://bioconductor.org/checkResults/devel/data-experiment-LATEST/RTCGA.miRNASeq/)
 
 
 ````{R}
