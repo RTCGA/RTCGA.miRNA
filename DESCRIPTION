@@ -1,24 +1,21 @@
 Package: RTCGA.miRNASeq
 Type: Package
 Title: miRNASeq datasets from The Cancer Genome Atlas Project
-Version: 0.99.1
+Version: 0.99.4
 Date: 2015-12-03
 Author: Witold Chodor <witoldchodor@gmail.com>
 Maintainer: Marcin Kosinski <m.p.kosinski@gmail.com>
-Description: Package provides miRNASeq datasets from The Cancer Genome
-    Atlas Project for all available cohorts types from
-    http://gdac.broadinstitute.org/. Data format is
-    explained here https://wiki.nci.nih.gov/display/TCGA/miRNASeq#miRNASeq-DataOverview
+Description: Package provides miRNASeq datasets from The Cancer Genome Atlas Project for all
+          available cohorts types from http://gdac.broadinstitute.org/. Data format is
+          explained here https://wiki.nci.nih.gov/display/TCGA/miRNASeq#miRNASeq-DataOverview
+          Data from 2015-11-01 snapshot.
 License: GPL-2
 LazyData: TRUE
 Repository: Bioconductor
-BugReports: https://github.com/RTCGA/RTCGA.data/issues
-Depends:
-    R (>= 3.2.0),
-    RTCGA
-Suggests:
-    knitr
-biocViews: Annotation Data
+BugReports: https://github.com/RTCGA/RTCGA/issues
+Depends: R (>= 3.3.0), RTCGA
+Suggests: knitr
+biocViews: AnnotationData
 VignetteBuilder: knitr
 NeedsCompilation: no
 RoxygenNote: 5.0.1
