@@ -6,12 +6,13 @@
 #' all cohorts types from \url{http://gdac.broadinstitute.org/}.
 #' Data were downloaded using \link{RTCGA-package} and contain snapshots for
 #' the date: \code{2015-11-01}. The process is described here:
-#' \url{http://mi2-warsaw.github.io/RTCGA.data/}.
+#' \url{http://rtcga.github.io/RTCGA/}.
 #' Use cases, examples and information about datasets in \pkg{RTCGA.data}
 #' family can be found here: \code{browseVignettes("RTCGA")}. miRNASeq data format
 #' is explained here \url{https://wiki.nci.nih.gov/display/TCGA/miRNASeq#miRNASeq-DataOverview}.
 #' There is one extra column "machine" in each dataset which describes a machine that 
 #' produced dataset. It can be: Illumina Genome Analyzer, Illumina HiSeq 2000 or both.
+#' Converting \pkg{RTCGA.miRNASeq} datasets from \code{data.frames} to Bioconductor classes is explained here \link{convertTCGA}.
 #' 
 #' @details \code{browseVignettes("RTCGA")}
 #' 
